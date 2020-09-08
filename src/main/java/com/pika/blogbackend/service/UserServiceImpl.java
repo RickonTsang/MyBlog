@@ -1,5 +1,6 @@
 package com.pika.blogbackend.service;
 
+import com.pika.blogbackend.dao.UserRepository;
 import com.pika.blogbackend.po.User;
 import com.pika.blogbackend.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;

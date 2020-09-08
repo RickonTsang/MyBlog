@@ -1,8 +1,12 @@
-package com.pika.blogbackend.service;
+package com.pika.blogbackend.dao;
 
 import com.pika.blogbackend.po.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+/**
+ * Created by limi on 2017/10/15.
+ */
+public interface UserRepository extends JpaRepository<User,Long> {
+
     User findByUsernameAndPassword(String username, String password);
 }

@@ -1,5 +1,6 @@
 package com.pika.blogbackend.po;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,6 +13,7 @@ public class Type {
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
 
     @OneToMany(mappedBy = "type")

@@ -9,6 +9,7 @@ import java.util.List;
 
 @Entity(name = "t_tag")
 public class Tag {
+
     @Id
     @GeneratedValue
     private Long id;
